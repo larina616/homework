@@ -1,0 +1,142 @@
+@import url(reset.css);
+
+
+		body {
+			background: #F2ECFF;
+			font-family: "Inter", sans-serif;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+/*
+		td {
+			border-bottom: 1px solid #E0E0E0;
+		}
+*/
+		.td-border-none {
+			border: none;
+		}
+
+		.table-inner {
+			width: 600px;
+			margin: 40px auto 0;
+			padding: 12px 24px 24px;
+			background: #fff;
+			border-radius: 8px;
+			box-shadow: 0px 4px 6px rgba(1, 1, 1, 0.1)
+		}
+
+		/* .table {
+			width: 100%;
+		} */
+
+		.table-main-row {
+			height: 56px;
+		}
+
+ .link {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #98A2B3;
+  text-decoration: none;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.text-light {
+  color: #667085;
+}
+
+.logo-top {
+  display: inline-block;
+  margin-top: 48px;
+}
+
+.logo-bottom {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.logo-top, .logo-bottom {
+  width: 120px;
+  height: 56px;
+}
+
+.title {
+  color: #101828;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px; 
+  margin-top: 40px;
+}
+
+.subtitle {
+  line-height: 24px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  color: #667085;
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+
+.table-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.table-right {
+  text-align: right;
+  color: #101828;
+}
+
+.table-left {
+  color: #667085;
+  width: 376px;
+}
+
+.font-regular {
+  font-weight: 400; 
+}
+
+.font-bold {
+  font-weight: 600; 
+}
+
+.row-height {
+  height: 56px;
+}
+
+.footer-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.footer-subtitle {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight:400;
+  color:#667085;
+  margin-top: 4px;
+}
+
+.footer-address {
+  vertical-align: bottom;
+  text-align: right;
+  font-weight: 400;
+  font-size: 15px;
+  line-height:24px;
+  color:#667085;
+  margin-top: 4px;
+}
+
+.border>td {
+border-bottom: 1px solid #E0E0E0;
+}

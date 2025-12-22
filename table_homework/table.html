@@ -4,60 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 		rel="stylesheet">
 	<title>Table 2</title>
-
-	<style>
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-			border: 0;
-		}
-
-		body {
-			background: #F2ECFF;
-			font-family: "Inter", sans-serif;
-		}
-
-		table {
-			border-collapse: collapse;
-			width: 100%;
-		}
-
-		td {
-			border-bottom: 1px solid #E0E0E0;
-		}
-
-		.td-border-none {
-			border: none;
-		}
-
-		.table-inner {
-			width: 600px;
-			margin: 40px auto 0;
-			padding: 12px 24px 24px;
-			background: #fff;
-			border-radius: 8px;
-			box-shadow: 0px 4px 6px rgba(1, 1, 1, 0.1)
-		}
-
-		/* .table {
-			width: 100%;
-		} */
-
-		.table-main-row {
-			height: 56px;
-		}
-
-		.w-376 {
-			width: 376px;
-		}
-	</style>
 </head>
 
 <body>
@@ -66,67 +19,55 @@
 			<thead>
 				<tr>
 					<th colspan="3">
-						<a class="link" href="#" style=" line-height: 24px; font-weight: 400; font-size: 15px; color: #98A2B3; text-decoration: none; margin-top: 12px;">View in browser</a>
+						<a class="link" href="#">View in browser</a><br>
+						<img src="img/logo.svg" alt="ACME" class="logo-top">
 					</th>
 				</tr>
-								<tr>
 					<th colspan="3">
-						<img src="img/logo.svg" alt="ACME" width="120" height="56" style=" margin-top: 28px;">
-					</th>
-									</tr>
-								<tr>
-					<th colspan="3">
-						<p class="title" style="text-align: left; font-size: 28px; font-weight: 600; line-height: 36px; color: #101828; margin-top: 40px;">Functional Style</p>
-						<p class="subtitle" style="line-height: 24px; text-align: left; font-size: 15px; font-weight: 400; color: #667085; margin-top: 8px; margin-bottom: 48px;">Combine practicality and style effortlessly with our furniture, offering functional designs that enhance your living space</p>
+						<p class="title">Functional Style</p>
+						<p class="subtitle">Combine practicality and style effortlessly with our furniture, offering functional designs that enhance your living space</p>
 					</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="table-main-row" style="font-weight: 600; font-size: 16px; line-height: 24px;">
-					<td class="w-376" style="color:#667085">Item</td>
-					<td style="text-align: right; color: #101828">Qty</td>
-					<td style="text-align: right; color: #101828">Price</td>
+				<tr class="table-text font-bold row-height border">
+					<td class="table-left;">Item</td>
+					<td class="table-right">Qty</td>
+					<td class="table-right">Price</td>
 				</tr>
-				<tr class="table-main-row">
-					<td class="w-376" style="color: #667085">Elegant Feast</td>
-					<td style="text-align: right; color: #101828">2</td>
-					<td style="text-align: right; color: #101828">$499.99</td>
+				<tr class="table-text font-regular row-height border">
+					<td class="table-left">Elegant Feast</td>
+					<td class="table-right">2</td>
+					<td class="table-right">$499.99</td>
 				</tr>
-				<tr class="table-main-row">
-					<td class="w-376" style="color: #667085" >Modern Fusion</td>
-					<td style="text-align: right; color: #101828">2</td>
-					<td style="text-align: right; color: #101828">$699.99</td>
+				<tr class="table-text font-regular row-height border">
+					<td class="table-left" >Modern Fusion</td>
+					<td class="table-right">2</td>
+					<td class="table-right">$699.99</td>
 				</tr>
-				<tr class="table-main-row">
-					<td class="w-376" style="color: #667085" >Rustic Charm</td>
-					<td style="text-align: right; color: #101828">2</td>
-					<td style="text-align: right; color: #101828">$399.99</td>
+				<tr class="table-text font-regular row-height border">
+					<td class="table-left">Rustic Charm</td>
+					<td class="table-right">2</td>
+					<td class="table-right">$399.99</td>
 				</tr>
-				<tr class="table-main-row">
-					<td class="w-376" style="color: #667085; font-weight: 600;" >Total</td>
-					<td style="text-align: right; color: #101828">6</td>
-					<td style="text-align: right; color: #101828; font-weight: 600">$3194.99</td>
+				<tr class="table-text row-height border">
+					<td class="table-left">Total</td>
+					<td class="table-right font-regular">6</td>
+					<td class="table-right font-bold">$3194.99</td>
 				</tr>
 			</tbody>
 			<tfoot>
 				<tr>
 					<td class="td-border-none" colspan="3">
 						<table>
-							<tbody>
 								<tr>
 									<td class="td-border-none">
-										<img src="img/logo.svg" alt="ACME" width="120" height="56"  style="margin-top: 48px;">
-								</tr>
-									<td class="td-border-none">
-										<p class="t-footer-subtitle" style="font-size: 16px; font-weight: 600; line-height: 24px; color:#101828; margin-top: 12px;">Acme corporation</p>
+										<img src="img/logo.svg" alt="ACME" class="logo-bottom">
+										<p class="footer-title">Acme corporation</p>
+										<p class="footer-subtitle">Think different</p>
 									</td>
+									<td class="td-border-none footer-address">123 Main Street Anytown, CA 12345</td>
 								</tr>
-									<td class="td-border-none">
-										<p style="font-size: 15px; line-height: 24px; font-weight:400; color:#667085; margin-top: 4px;">Think different</p>
-									</td>
-									<td class="td-border-none" style="text-align: right; font-weight: 400; font-size: 15px; line-height:24px; color:#667085;  margin-top: 4px;">123 Main Street Anytown, CA 12345</td>
-								</tr>
-							</tbody>
 						</table>
 					</td>
 				</tr>

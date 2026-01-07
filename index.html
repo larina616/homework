@@ -21,14 +21,14 @@
 					</a>
 
 					<nav class="header-nav">
-						<a class="header-link" href="#" aria-current="header-link">Studio</a>
+						<a class="header-link active" href="#" aria-current="page">Studio</a>
 						<a class="header-link" href="#">Portfolio</a>
-						<a class="header-link" href="#">Contact</a>
+						<a class="header-link" href="#">Contacts</a>
 					</nav>
                     
                     <div class="header-info">
-                        <a class="header-email" href="#">info@devstudio.com</a>
-                        <p class="header-phone">+38 096 111 11 11</p>
+                        <a class="header-link email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="header-link phone" href="tel:+380961111111">+38 096 111 11 11</a>
                     </div>
 				</div>
             </div>
@@ -42,8 +42,10 @@
                 </div>
             </section>
             <section class="about">
-                <div class="container container-about">
-                    <article class="about-card">
+                <div class="container">
+                    <h2 hidden class="about-hidden">About section</h2>
+                    <div class="container-about">
+                        <article class="about-card">
                         <h3 class="about-title">Attention to detail</h3>
                         <p class="about-description">Ideological considerations, as well as the beginning of the daily work of forming a position.</p>
                     </article>
@@ -59,6 +61,7 @@
                         <h3 class="about-title">Modern technologies</h3>
                         <p class="about-description">The significance of these problems is so obvious that the implementation of planned targets.</p>
                     </article>
+                    </div>
                 </div>
             </section>
 
@@ -66,9 +69,15 @@
                 <div class="container container-services">
                     <h2>What are we doing</h2>
                     <div class=services-img>
-                        <img src="img/img-1.jpg" alt="service" width="370" height="294">
-                        <img src="img/img-2.png" alt="service" width="370" height="294">
-                        <img src="img/img-3.jpg" alt="service" width="370" height="294">
+                        <div>
+                            <img src="img/img-1.jpg" alt="service" width="370" height="294">
+                        </div>
+                        <div>
+                            <img src="img/img-2.png" alt="service" width="370" height="294">
+                        </div>
+                        <div>
+                            <img src="img/img-3.jpg" alt="service" width="370" height="294">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -77,29 +86,36 @@
                 <div class="container container-team">
                     <h2>Our team</h2>
                     <div class="team-cards">
-
                         <article class="team-card">
                             <img class="team-img" src="img/team-1.jpg" alt="Igor Demyanenko" width="270" height="260">
-                            <h4>Igor Demyanenko</h4>
-                            <p class="position">Product Designer</p>
+                            <div class="team-info">
+                                <h3 class="name">Igor Demyanenko</h3>
+                                <p class="position">Product Designer</p>
+                            </div>
                         </article>
 
                         <article class="team-card">
                             <img class="team-img" src="img/team-2.jpg" alt="Igor Demyanenko" width="270" height="260">
-                            <h4>Olga Repina</h4>
-                            <p class="position">Frontend Developer</p>
+                            <div class="team-info">
+                                <h3 class="name">Olga Repina</h3>
+                                <p class="position">Frontend Developer</p>
+                            </div>
                         </article>
 
                         <article class="team-card">
                             <img class="team-img" src="img/team-3.jpg" alt="Igor Demyanenko" width="270" height="260">
-                            <h4>Nikolay Tarasov</h4>
-                            <p class="position">Marketing</p>
+                            <div class="team-info">
+                                <h3 class="name">Nikolay Tarasov</h3>
+                                <p class="position">Marketing</p>
+                            </div>
                         </article>
 
                         <article class="team-card">
                             <img class="team-img" src="img/team-4.jpg" alt="Igor Demyanenko" width="270" height="260">
-                            <h4>Mikhail Ermakov</h4>
-                            <p class="position">Frontend Developer</p>
+                            <div  class="team-info">
+                                <h3 class="name">Mikhail Ermakov</h3>
+                                <p class="position">Frontend Developer</p>
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -108,10 +124,12 @@
 
         <footer class="footer">
             <div class="container footer-container">
-                <img class="footer-logo" src="img/logo.png" alt="WebStudio" width="144" height="20">
-                <p class="footer-address">Kharkov, Pobedy Ave., 26</p>
-                <p class="footer-email">info@example.com</p>
-                <p class="footer-phone">+38 099 111 11 11</p>
+                <img class="footer-logo" src="img/footer_logo.png" alt="WebStudio" width="144" height="20">
+                <ul>
+                    <li><a class="footer-link footer-address">Kharkov, Pobedy Ave., 26</a></li>
+                    <li><a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
             </div>
         </footer>
 

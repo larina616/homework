@@ -1,8 +1,9 @@
 /* reset.css | normilize.css */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 
 html,
 body,
@@ -84,13 +85,19 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: top;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
 }
 
 body {

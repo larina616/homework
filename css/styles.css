@@ -365,14 +365,36 @@ text-align: center;
     flex: 1 1 30%
 }
 
+
+.case-img:hover > div {
+    opacity: 1.0
+}
+
+.case-img {
+	height: 294px;
+    position: relative;
+}
+
+.case-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .hover-overlay {
-    width: 370px;
-    height: 294px;
+    /* width: 370px;
+    height: 294px; */
     background-color: rgba(33, 150, 243, .9);
     padding: 24px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    display: none;
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+    opacity: 0.0;
+    z-index: 1;
 }
 
 .hover-overlay p {
@@ -386,20 +408,6 @@ text-align: center;
     0px 1px 1px 0px rgba(0, 0, 0, 0.12),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
-
-/* .individual-case:hover > div {
-    display: block;
-} */
-
-.case-img {
-	height: 294px;
-}
-
-.case-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .case-info {

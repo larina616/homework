@@ -182,15 +182,9 @@ body {
 
 /* HERO */
 
-.hero {
-    /* position: relative; */
-}
-
 .container-hero {
-    background-color: var(--bg-dark-gray);
     background: #000 url('../img/hero_bg.jpg') no-repeat 50% / cover;
-    position:relative;
-
+    position: relative;
 }
 
 .container-hero::before {
@@ -243,7 +237,6 @@ h1 {
 .container-about {
     display: flex;
     gap: 30px;
-    /* position: relative; */
 }
 
 .about-card {

@@ -368,6 +368,45 @@ h2 {
     padding: 30px;
 }
 
+.social-media-container {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-media-container a {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    background-color: var(--bg-white);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* .team-sm-bg {
+    color: var(--bg-white);
+} */
+
+.social-media-container svg {
+ height: 20px;
+ width: 20px;
+ color: var(--logo-color);
+}
+
+/* .team-svg svg {
+    color: var(--logo-color);
+} */
+
+.social-media-container a:hover {
+    background-color: var(--main-color);
+}
+
+.social-media-container a:hover svg {
+    color: var(--contrast-color);
+}
+
 h3.name {
 font-size: 16px;
 font-weight: 500;
@@ -394,43 +433,32 @@ text-align: center;
 .customers-content {
     display: flex;
     gap: 30px;
-    flex-direction: row;
+    justify-content: center;
     margin-bottom: 94px;
 }
 
-.customers-content li {
+.customers-content a {
     width: 170px;
     height: 92px;
     border: 1px solid var(--logo-color);
-}
-
-
-.customers-content a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 .customers-content svg {
     width: 106px;
     height: 60px;
     color: var(--logo-color);
-    align-items: center;
-    display: block;
-    
 }
 
-.customers-content li:hover {
+.customers-content a:hover {
     border-color: var(--main-color);
 }
 
-.customers-content li:hover svg {
+.customers-content a:hover svg {
     color: var(--main-color);
 }
-
-
 
 
 /* FOOTER */
@@ -440,9 +468,18 @@ text-align: center;
     background-color: var(--bg-dark-gray);
 }
 
+.footer-container {
+    display: flex;
+    gap: 129px;
+}
+
 .footer-container > img {
     display: block;
     margin-bottom: 20px;
+}
+
+.footer-list {
+    margin-top: 20px;
 }
 
 .footer-link {
@@ -465,6 +502,27 @@ text-align: center;
 
 .footer-list li:not(:first-child) a {
     opacity: 0.6;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.right-column svg {
+    color: var(--contrast-color)
 }
 
 /* PORTFOLIO */

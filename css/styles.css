@@ -91,15 +91,9 @@ body {
     margin-left: 94px;
     display: flex;
     gap: 50px;
+    align-items: center;
     height: 24px;
 }
-
-/* .header-list .header-info a {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--dark-gray-color);
-    text-decoration: none;
-} */
 
 .header-link {
     font-size: 14px;
@@ -242,9 +236,6 @@ h1 {
 }
 
 .about-card {
-    /* display: flex;
-    flex-direction: column;
-    gap: 10px; */
     flex: 1 1 25%;
     width: 100%;
 
@@ -296,13 +287,6 @@ h1 {
     margin: 94px 0px;
 }
 
-/* .container-services {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-
-} */
-
 h2 {
     font-weight: 700;
     font-size: 36px;
@@ -335,12 +319,6 @@ h2 {
     padding: 94px;
     background-color: var(--bg-light-gray);
 }
-
-/* .container-team {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-} */
 
 .team-cards {
     display: flex;
@@ -380,14 +358,11 @@ h2 {
     height: 44px;
     width: 44px;
     background-color: var(--bg-white);
+    color: var(--logo-color);
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
-
-/* .team-sm-bg {
-    color: var(--bg-white);
-} */
 
 .social-media-container svg {
  height: 20px;
@@ -395,9 +370,6 @@ h2 {
  color: var(--logo-color);
 }
 
-/* .team-svg svg {
-    color: var(--logo-color);
-} */
 
 .social-media-container a:hover {
     background-color: var(--main-color);
@@ -427,37 +399,34 @@ text-align: center;
 /* REGULAR CUSTOMERS */
 
 .customers {
-    margin-top: 94px;
+    padding: 94px 0;
 }
 
 .customers-content {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-bottom: 94px;
+}
+
+.customers-content li {
+    flex: 1 1 16%;
 }
 
 .customers-content a {
-    width: 170px;
-    height: 92px;
+    padding: 15px;
     border: 1px solid var(--logo-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: var(--logo-color);
+    display: block;
+    text-align: center;
 }
 
 .customers-content svg {
     width: 106px;
     height: 60px;
-    color: var(--logo-color);
 }
 
 .customers-content a:hover {
-    border-color: var(--main-color);
-}
-
-.customers-content a:hover svg {
-    color: var(--main-color);
+    --logo-color: var(--main-color);
 }
 
 
@@ -513,16 +482,13 @@ h4 {
 }
 
 .right-column {
+    --logo-color: --contrast-color;
     display: flex;
     flex-direction: column;
 }
 
 .right-column a {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-.right-column svg {
-    color: var(--contrast-color)
 }
 
 /* PORTFOLIO */

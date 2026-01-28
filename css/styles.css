@@ -25,17 +25,13 @@ body {
 	font-size: 12px;
 	line-height: 1.2;
 	font-weight: 400;
-	height: 100vh;
 	margin: 0;
-}
-
-.bg {
 	position: relative;
 	min-height: 100vh;
 	background: url('../img/bg.jpg') center/cover no-repeat;
 }
 
-.bg::before {
+body::before {
 	content: '';
 	position: absolute;
 	inset: 0;
@@ -43,24 +39,41 @@ body {
 	z-index: 1;
 }
 
+
 .container {
 	max-width: 496px;
-	height: 100vh;
-	margin: 0 0 0 auto;
-	padding-top: 62px;
+	min-height: 100vh;
+	margin-left: auto;
 	background-color: rgba(233, 233, 233, 0.45);
 	backdrop-filter: blur(10px);
 	position: relative;
 	z-index: 2;
+
+	/* test scroll*/
+
+	height: 100vh; 
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center; 
+	align-items: flex-start
+
 }
 
-form {
-	margin: 77px 78px auto;
+.panel {
+	width: 340px;
+	margin: auto 0
 }
+
+/* form {
+	width: 340px;
+	padding-top: 60px;
+	margin: 0 auto;
+} */
 
 h1 {
 	font-size: 30px;
-	margin: 77px auto 29px auto;
+
+	padding-top: 75px;
 	text-align: center;
 }
 
@@ -70,6 +83,7 @@ label {
 
 .custom-switch {
 	text-align: center;
+	margin-top: 60px;
 }
 
 .custom-switch-input {
@@ -122,7 +136,7 @@ label {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	margin-bottom: 20px;
+	padding: 20px 0;
 }
 
 input {
@@ -131,7 +145,7 @@ input {
 	max-width: 340px;
 	background-color: #7c7c7c;
 	border-radius: 22px;
-	padding: 0 20px;
+	padding: 20px;
 	color: var(--white);
 
 }
@@ -151,7 +165,7 @@ input:focus {
 .remember-forgot-container {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 .custom-checkbox input {
@@ -210,6 +224,7 @@ input:focus {
 
 button {
 	background-color: var(--main-color);
+	display: block;
 	width: 100%;
 	height: 44px;
 	text-align: center;
@@ -224,7 +239,7 @@ button:hover {
 /* Register link */
 
 .more-text {
-	margin: 35px auto 24px;
+	padding-top: 35px;
 	display: flex;
 	flex-direction: column;
 	gap: 35px;
@@ -253,6 +268,7 @@ button:hover {
 	display: flex;
 	gap: 9px;
 	justify-content: center;
+	padding: 24px 0 60px 0;
 }
 
 .icons svg {
